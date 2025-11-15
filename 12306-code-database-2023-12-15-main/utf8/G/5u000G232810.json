@@ -1,0 +1,171 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "南昌西",
+        "train_class_name": "高速",
+        "is_start": "Y",
+        "service_type": "2",
+        "end_station_name": "张家港",
+        "arrive_time": "----",
+        "start_station_name": "南昌西",
+        "station_train_code": "G2328",
+        "arrive_day_diff": "0",
+        "start_time": "08:27",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "08:56",
+        "station_train_code": "G2328",
+        "station_name": "共青城",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "08:58",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:29"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:04",
+        "station_train_code": "G2328",
+        "station_name": "德安",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:06",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "00:37"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:22",
+        "station_train_code": "G2328",
+        "station_name": "庐山",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:25",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "00:55"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:50",
+        "station_train_code": "G2328",
+        "station_name": "宿松东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:52",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "01:23"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "10:28",
+        "station_train_code": "G2328",
+        "station_name": "安庆",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "10:32",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "02:01"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "11:02",
+        "station_train_code": "G2328",
+        "station_name": "铜陵",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "11:04",
+        "wz_num": "--",
+        "station_no": "07",
+        "running_time": "02:35"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "11:32",
+        "station_train_code": "G2328",
+        "station_name": "芜湖",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "11:34",
+        "wz_num": "--",
+        "station_no": "08",
+        "running_time": "03:05"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "11:51",
+        "station_train_code": "G2328",
+        "station_name": "马鞍山东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "11:53",
+        "wz_num": "--",
+        "station_no": "09",
+        "running_time": "03:24"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "12:11",
+        "station_train_code": "G2325",
+        "station_name": "南京南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "12:14",
+        "wz_num": "--",
+        "station_no": "10",
+        "running_time": "03:44"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "12:48",
+        "station_train_code": "G2325",
+        "station_name": "武进",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "12:50",
+        "wz_num": "--",
+        "station_no": "11",
+        "running_time": "04:21"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "13:04",
+        "station_train_code": "G2325",
+        "station_name": "江阴",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "13:13",
+        "wz_num": "--",
+        "station_no": "12",
+        "running_time": "04:37"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "13:28",
+        "station_train_code": "G2325",
+        "station_name": "张家港",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "13:28",
+        "wz_num": "--",
+        "station_no": "13",
+        "running_time": "05:01"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

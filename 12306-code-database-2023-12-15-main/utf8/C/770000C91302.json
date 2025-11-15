@@ -1,0 +1,87 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "重庆北",
+        "train_class_name": "动车",
+        "is_start": "Y",
+        "service_type": "2",
+        "end_station_name": "成都东",
+        "arrive_time": "07:38",
+        "start_station_name": "重庆北",
+        "station_train_code": "C913",
+        "arrive_day_diff": "0",
+        "start_time": "07:38",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "08:11",
+        "station_train_code": "C913",
+        "station_name": "合川",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "08:13",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:33"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "08:40",
+        "station_train_code": "C913",
+        "station_name": "武胜",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "08:42",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "01:02"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:10",
+        "station_train_code": "C912",
+        "station_name": "南充北",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:30",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "01:32"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "10:02",
+        "station_train_code": "C913",
+        "station_name": "遂宁",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "10:10",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "02:24"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "11:18",
+        "station_train_code": "C913",
+        "station_name": "成都东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "11:18",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "03:40"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

@@ -1,0 +1,159 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "红河",
+        "train_class_name": "动车",
+        "is_start": "Y",
+        "service_type": "1",
+        "end_station_name": "大理",
+        "arrive_time": "15:55",
+        "start_station_name": "红河",
+        "station_train_code": "D8718",
+        "arrive_day_diff": "0",
+        "start_time": "15:55",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:08",
+        "station_train_code": "D8718",
+        "station_name": "开远南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "16:10",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:13"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:24",
+        "station_train_code": "D8718",
+        "station_name": "朋普",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "16:26",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "00:29"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:35",
+        "station_train_code": "D8718",
+        "station_name": "竹园",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "16:37",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "00:40"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:51",
+        "station_train_code": "D8719",
+        "station_name": "弥勒",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "16:56",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "00:56"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "17:13",
+        "station_train_code": "D8719",
+        "station_name": "石林西",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "17:16",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "01:18"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "17:38",
+        "station_train_code": "D8719",
+        "station_name": "昆明南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "17:53",
+        "wz_num": "--",
+        "station_no": "07",
+        "running_time": "01:43"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "18:11",
+        "station_train_code": "D8718",
+        "station_name": "昆明",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "18:15",
+        "wz_num": "--",
+        "station_no": "08",
+        "running_time": "02:16"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "18:52",
+        "station_train_code": "D8718",
+        "station_name": "禄丰南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "18:54",
+        "wz_num": "--",
+        "station_no": "09",
+        "running_time": "02:57"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "19:20",
+        "station_train_code": "D8719",
+        "station_name": "楚雄",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "19:22",
+        "wz_num": "--",
+        "station_no": "10",
+        "running_time": "03:25"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "20:02",
+        "station_train_code": "D8719",
+        "station_name": "祥云",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "20:05",
+        "wz_num": "--",
+        "station_no": "11",
+        "running_time": "04:07"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "20:27",
+        "station_train_code": "D8719",
+        "station_name": "大理",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "20:27",
+        "wz_num": "--",
+        "station_no": "12",
+        "running_time": "04:32"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

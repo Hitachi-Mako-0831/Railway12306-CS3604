@@ -1,0 +1,87 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "北京朝阳",
+        "train_class_name": "高速",
+        "is_start": "Y",
+        "service_type": "1",
+        "end_station_name": "沈阳",
+        "arrive_time": "07:53",
+        "start_station_name": "北京朝阳",
+        "station_train_code": "G979",
+        "arrive_day_diff": "0",
+        "start_time": "07:53",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "08:30",
+        "station_train_code": "G979",
+        "station_name": "兴隆县西",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "08:41",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:37"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:01",
+        "station_train_code": "G979",
+        "station_name": "承德南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:04",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "01:08"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:57",
+        "station_train_code": "G979",
+        "station_name": "辽宁朝阳",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:59",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "02:04"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "10:30",
+        "station_train_code": "G979",
+        "station_name": "阜新",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "10:32",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "02:37"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "11:21",
+        "station_train_code": "G979",
+        "station_name": "沈阳",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "11:21",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "03:28"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

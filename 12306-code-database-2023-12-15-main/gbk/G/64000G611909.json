@@ -1,0 +1,135 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "张家界西",
+        "train_class_name": "高速",
+        "is_start": "Y",
+        "service_type": "1",
+        "end_station_name": "广州南",
+        "arrive_time": "----",
+        "start_station_name": "张家界西",
+        "station_train_code": "G6119",
+        "arrive_day_diff": "0",
+        "start_time": "09:07",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:45",
+        "station_train_code": "G6119",
+        "station_name": "吉首东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:47",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:38"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "10:19",
+        "station_train_code": "G6119",
+        "station_name": "怀化南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "10:22",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "01:12"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "10:53",
+        "station_train_code": "G6119",
+        "station_name": "洞口",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "10:55",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "01:46"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "11:28",
+        "station_train_code": "G6119",
+        "station_name": "邵阳",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "11:31",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "02:21"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "11:46",
+        "station_train_code": "G6119",
+        "station_name": "邵东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "11:48",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "02:39"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "12:36",
+        "station_train_code": "G6119",
+        "station_name": "衡阳东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "12:40",
+        "wz_num": "--",
+        "station_no": "07",
+        "running_time": "03:29"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "13:13",
+        "station_train_code": "G6119",
+        "station_name": "郴州西",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "13:15",
+        "wz_num": "--",
+        "station_no": "08",
+        "running_time": "04:06"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "13:46",
+        "station_train_code": "G6119",
+        "station_name": "韶关",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "13:48",
+        "wz_num": "--",
+        "station_no": "09",
+        "running_time": "04:39"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "14:46",
+        "station_train_code": "G6119",
+        "station_name": "广州南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "14:46",
+        "wz_num": "--",
+        "station_no": "10",
+        "running_time": "05:39"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

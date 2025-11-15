@@ -1,0 +1,75 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "沧州西",
+        "train_class_name": "高速",
+        "is_start": "Y",
+        "service_type": "1",
+        "end_station_name": "石家庄",
+        "arrive_time": "08:01",
+        "start_station_name": "沧州西",
+        "station_train_code": "G3681",
+        "arrive_day_diff": "0",
+        "start_time": "08:01",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "08:27",
+        "station_train_code": "G3681",
+        "station_name": "德州东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "08:29",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:26"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "08:42",
+        "station_train_code": "G3684",
+        "station_name": "平原东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:02",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "00:41"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:35",
+        "station_train_code": "G3684",
+        "station_name": "衡水北",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:37",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "01:34"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "10:16",
+        "station_train_code": "G3684",
+        "station_name": "石家庄",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "10:16",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "02:15"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

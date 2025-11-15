@@ -1,0 +1,99 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "南昌西",
+        "train_class_name": "高速",
+        "is_start": "Y",
+        "service_type": "1",
+        "end_station_name": "赣州西",
+        "arrive_time": "----",
+        "start_station_name": "南昌西",
+        "station_train_code": "G5031",
+        "arrive_day_diff": "0",
+        "start_time": "07:05",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "07:32",
+        "station_train_code": "G5031",
+        "station_name": "丰城东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "07:34",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:27"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "07:51",
+        "station_train_code": "G5031",
+        "station_name": "新干东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "07:53",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "00:46"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "08:15",
+        "station_train_code": "G5031",
+        "station_name": "吉安西",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "08:17",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "01:10"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "08:29",
+        "station_train_code": "G5031",
+        "station_name": "泰和",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "08:31",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "01:24"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:02",
+        "station_train_code": "G5031",
+        "station_name": "赣县北",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:04",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "01:57"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:17",
+        "station_train_code": "G5031",
+        "station_name": "赣州西",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:17",
+        "wz_num": "--",
+        "station_no": "07",
+        "running_time": "02:12"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

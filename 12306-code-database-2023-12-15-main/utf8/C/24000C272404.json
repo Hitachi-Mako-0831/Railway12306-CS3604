@@ -1,0 +1,75 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "雄安",
+        "train_class_name": "高速",
+        "is_start": "Y",
+        "service_type": "1",
+        "end_station_name": "北京西",
+        "arrive_time": "----",
+        "start_station_name": "雄安",
+        "station_train_code": "C2724",
+        "arrive_day_diff": "0",
+        "start_time": "15:18",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "15:33",
+        "station_train_code": "C2724",
+        "station_name": "固安东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "15:35",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:15"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "15:44",
+        "station_train_code": "C2724",
+        "station_name": "大兴机场",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "15:46",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "00:26"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "15:57",
+        "station_train_code": "C2724",
+        "station_name": "北京大兴",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "15:59",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "00:39"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:20",
+        "station_train_code": "C2724",
+        "station_name": "北京西",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "16:20",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "01:02"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

@@ -1,0 +1,63 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "河源东",
+        "train_class_name": "高速",
+        "is_start": "Y",
+        "service_type": "2",
+        "end_station_name": "深圳北",
+        "arrive_time": "----",
+        "start_station_name": "河源东",
+        "station_train_code": "G9717",
+        "arrive_day_diff": "0",
+        "start_time": "20:50",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "21:10",
+        "station_train_code": "G9717",
+        "station_name": "惠州北",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "21:12",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:20"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "21:27",
+        "station_train_code": "G9717",
+        "station_name": "东莞南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "21:30",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "00:37"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "21:50",
+        "station_train_code": "G9717",
+        "station_name": "深圳北",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "21:50",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "01:00"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

@@ -1,0 +1,135 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "广州东",
+        "train_class_name": "快速",
+        "is_start": "Y",
+        "service_type": "1",
+        "end_station_name": "南昌",
+        "arrive_time": "----",
+        "start_station_name": "广州东",
+        "station_train_code": "K1666",
+        "arrive_day_diff": "0",
+        "start_time": "22:45",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "05:11",
+        "station_train_code": "K1666",
+        "station_name": "大余",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "05:15",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "06:26"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "06:20",
+        "station_train_code": "K1666",
+        "station_name": "赣州",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "06:46",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "07:35"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "07:33",
+        "station_train_code": "K1666",
+        "station_name": "兴国",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "07:36",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "08:48"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "08:27",
+        "station_train_code": "K1666",
+        "station_name": "泰和",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "08:31",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "09:42"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "08:54",
+        "station_train_code": "K1666",
+        "station_name": "吉安",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "08:58",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "10:09"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "09:50",
+        "station_train_code": "K1666",
+        "station_name": "新干",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "09:54",
+        "wz_num": "--",
+        "station_no": "07",
+        "running_time": "11:05"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "10:17",
+        "station_train_code": "K1666",
+        "station_name": "樟树东",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "10:21",
+        "wz_num": "--",
+        "station_no": "08",
+        "running_time": "11:32"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "11:12",
+        "station_train_code": "K1666",
+        "station_name": "向塘",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "11:16",
+        "wz_num": "--",
+        "station_no": "09",
+        "running_time": "12:27"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "11:39",
+        "station_train_code": "K1666",
+        "station_name": "南昌",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "11:39",
+        "wz_num": "--",
+        "station_no": "10",
+        "running_time": "12:54"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

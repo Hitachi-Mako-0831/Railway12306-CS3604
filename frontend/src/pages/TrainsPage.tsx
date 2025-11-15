@@ -8,13 +8,17 @@ const TrainsPage: React.FC = () => {
   return (
     <div style={{ padding: 24 }}>
       <h2>车次列表（占位）</h2>
-      <div>参数：</div>
-      <ul>
-        {entries.map(([k, v]) => (
-          <li key={k}>{k}: {v}</li>
-        ))}
-      </ul>
-      <div>后续将接入查询接口并展示结果。</div>
+      {entries.length > 0 && (
+        <div style={{ marginTop: 12 }}>
+          <div>当前参数：</div>
+          <ul>
+            {entries.map(([k, v]) => (
+              <li key={k}>{k}: {v}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <div style={{ marginTop: 12, color: '#666' }}>后续将接入查询接口并展示结果。</div>
     </div>
   )
 }

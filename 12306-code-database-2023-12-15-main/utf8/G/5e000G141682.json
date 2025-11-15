@@ -1,0 +1,183 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "宁波",
+        "train_class_name": "高速",
+        "is_start": "Y",
+        "service_type": "2",
+        "end_station_name": "长沙南",
+        "arrive_time": "06:57",
+        "start_station_name": "宁波",
+        "station_train_code": "G1416",
+        "arrive_day_diff": "0",
+        "start_time": "06:57",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "07:17",
+        "station_train_code": "G1416",
+        "station_name": "余姚北",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "07:19",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:20"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "07:31",
+        "station_train_code": "G1416",
+        "station_name": "绍兴东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "07:33",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "00:34"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "07:53",
+        "station_train_code": "G1417",
+        "station_name": "杭州南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "08:18",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "00:56"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "08:46",
+        "station_train_code": "G1417",
+        "station_name": "义乌",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "08:48",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "01:49"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:04",
+        "station_train_code": "G1417",
+        "station_name": "金华",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:07",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "02:07"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:28",
+        "station_train_code": "G1417",
+        "station_name": "衢州",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:35",
+        "wz_num": "--",
+        "station_no": "07",
+        "running_time": "02:31"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:56",
+        "station_train_code": "G1417",
+        "station_name": "玉山南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "10:05",
+        "wz_num": "--",
+        "station_no": "08",
+        "running_time": "02:59"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "10:18",
+        "station_train_code": "G1417",
+        "station_name": "上饶",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "10:20",
+        "wz_num": "--",
+        "station_no": "09",
+        "running_time": "03:21"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "10:46",
+        "station_train_code": "G1417",
+        "station_name": "鹰潭北",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "10:48",
+        "wz_num": "--",
+        "station_no": "10",
+        "running_time": "03:49"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "11:23",
+        "station_train_code": "G1417",
+        "station_name": "南昌西",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "11:28",
+        "wz_num": "--",
+        "station_no": "11",
+        "running_time": "04:26"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "12:10",
+        "station_train_code": "G1417",
+        "station_name": "宜春",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "12:12",
+        "wz_num": "--",
+        "station_no": "12",
+        "running_time": "05:13"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "12:29",
+        "station_train_code": "G1417",
+        "station_name": "萍乡北",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "12:31",
+        "wz_num": "--",
+        "station_no": "13",
+        "running_time": "05:32"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "13:01",
+        "station_train_code": "G1417",
+        "station_name": "长沙南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "13:01",
+        "wz_num": "--",
+        "station_no": "14",
+        "running_time": "06:04"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

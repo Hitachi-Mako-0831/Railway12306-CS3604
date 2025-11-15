@@ -5,6 +5,8 @@ require('dotenv').config();
 
 const authRoutes = require('./routes/auth');
 const registerRoutes = require('./routes/register');
+const trainRoutes = require('./routes/trains');
+const orderRoutes = require('./routes/orders');
 const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
@@ -20,6 +22,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/auth', authRoutes);
 app.use('/api/register', registerRoutes);
 app.use('/api/terms', registerRoutes);
+app.use('/api/trains', trainRoutes);
+app.use('/api/orders', orderRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {

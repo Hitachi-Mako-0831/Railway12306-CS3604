@@ -1,0 +1,63 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "广州",
+        "train_class_name": "快速",
+        "is_start": "Y",
+        "service_type": "1",
+        "end_station_name": "永州",
+        "arrive_time": "----",
+        "start_station_name": "广州",
+        "station_train_code": "K9126",
+        "arrive_day_diff": "0",
+        "start_time": "22:45",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "04:37",
+        "station_train_code": "K9127",
+        "station_name": "衡阳",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "05:20",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "05:52"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "06:40",
+        "station_train_code": "K9127",
+        "station_name": "祁阳",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "06:46",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "07:55"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "07:15",
+        "station_train_code": "K9127",
+        "station_name": "永州",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "07:15",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "08:30"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

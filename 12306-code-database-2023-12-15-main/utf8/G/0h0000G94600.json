@@ -1,0 +1,123 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "哈尔滨西",
+        "train_class_name": "高速",
+        "is_start": "Y",
+        "service_type": "1",
+        "end_station_name": "北京朝阳",
+        "arrive_time": "14:25",
+        "start_station_name": "哈尔滨西",
+        "station_train_code": "G946",
+        "arrive_day_diff": "0",
+        "start_time": "14:25",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "15:24",
+        "station_train_code": "G946",
+        "station_name": "长春西",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "15:26",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:59"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:18",
+        "station_train_code": "G946",
+        "station_name": "铁岭西",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "16:21",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "01:53"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:39",
+        "station_train_code": "G946",
+        "station_name": "沈阳北",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "16:42",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "02:14"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "17:57",
+        "station_train_code": "G946",
+        "station_name": "辽宁朝阳",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "18:10",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "03:32"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "18:30",
+        "station_train_code": "G946",
+        "station_name": "喀左",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "18:32",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "04:05"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "19:11",
+        "station_train_code": "G946",
+        "station_name": "承德南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "19:14",
+        "wz_num": "--",
+        "station_no": "07",
+        "running_time": "04:46"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "19:45",
+        "station_train_code": "G946",
+        "station_name": "密云",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "19:47",
+        "wz_num": "--",
+        "station_no": "08",
+        "running_time": "05:20"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "20:13",
+        "station_train_code": "G946",
+        "station_name": "北京朝阳",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "20:13",
+        "wz_num": "--",
+        "station_no": "09",
+        "running_time": "05:48"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

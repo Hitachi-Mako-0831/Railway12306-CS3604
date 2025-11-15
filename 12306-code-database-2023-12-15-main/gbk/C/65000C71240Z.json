@@ -1,0 +1,87 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "深圳",
+        "train_class_name": "动车",
+        "is_start": "Y",
+        "service_type": "1",
+        "end_station_name": "广州东",
+        "arrive_time": "16:24",
+        "start_station_name": "深圳",
+        "station_train_code": "C7124",
+        "arrive_day_diff": "0",
+        "start_time": "16:24",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:37",
+        "station_train_code": "C7124",
+        "station_name": "平湖",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "16:39",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:13"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:51",
+        "station_train_code": "C7124",
+        "station_name": "樟木头",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "17:01",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "00:27"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "17:08",
+        "station_train_code": "C7124",
+        "station_name": "常平",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "17:10",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "00:44"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "17:20",
+        "station_train_code": "C7124",
+        "station_name": "东莞",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "17:22",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "00:56"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "17:54",
+        "station_train_code": "C7124",
+        "station_name": "广州东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "17:54",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "01:30"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

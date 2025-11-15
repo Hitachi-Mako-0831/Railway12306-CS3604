@@ -1,0 +1,99 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "杭州东",
+        "train_class_name": "高速",
+        "is_start": "Y",
+        "service_type": "2",
+        "end_station_name": "南昌西",
+        "arrive_time": "20:20",
+        "start_station_name": "杭州东",
+        "station_train_code": "G1473",
+        "arrive_day_diff": "0",
+        "start_time": "20:20",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "20:45",
+        "station_train_code": "G1473",
+        "station_name": "诸暨",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "20:48",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:25"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "21:02",
+        "station_train_code": "G1473",
+        "station_name": "义乌",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "21:04",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "00:42"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "21:20",
+        "station_train_code": "G1473",
+        "station_name": "金华",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "21:30",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "01:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "21:51",
+        "station_train_code": "G1473",
+        "station_name": "衢州",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "21:53",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "01:31"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "22:20",
+        "station_train_code": "G1473",
+        "station_name": "上饶",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "22:22",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "02:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "23:18",
+        "station_train_code": "G1473",
+        "station_name": "南昌西",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "23:18",
+        "wz_num": "--",
+        "station_no": "07",
+        "running_time": "02:58"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

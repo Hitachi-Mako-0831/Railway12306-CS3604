@@ -166,3 +166,77 @@
   changeLog:
     - date: "2025-11-10"
       description: "初始创建，支持邮箱验证码验证功能。"
+
+- type: Database
+  id: DB-LoadTrainData
+  description: 从车次信息.json 加载所有车次基础信息
+  dependencies:
+    - none
+  acceptanceCriteria:
+    - 能够加载并解析 .trae/documents/2-车票查询与筛选/车次信息.json
+    - 若文件不存在或解析失败，返回空集合
+  changeLog:
+    - date: "2025-11-15"
+      description: "新增车次数据加载接口。"
+
+- type: Database
+  id: DB-ListTrainsByRoute
+  description: 按出发站、到达站和日期筛选直达车次
+  dependencies:
+    - DB-LoadTrainData
+  acceptanceCriteria:
+    - 输入参数包含 origin、destination、date
+    - 返回符合 origin 和 destination 的直达车次集合
+    - 不包含换乘方案
+  changeLog:
+    - date: "2025-11-15"
+      description: "新增按线路筛选车次接口。"
+
+- type: Database
+  id: DB-FilterTrainsByType
+  description: 按车次类型（高铁/动车等）过滤结果集合
+  dependencies:
+    - DB-ListTrainsByRoute
+  acceptanceCriteria:
+    - 当类型包含 GC/D 时，仅保留 G 字头或含“高速”以及 D 字头车次
+    - 未指定类型时返回全部结果
+  changeLog:
+    - date: "2025-11-15"
+      description: "新增车次类型过滤接口。"
+
+- type: Database
+  id: DB-GetTrainDetail
+  description: 根据车次号获取完整车次信息
+  dependencies:
+    - DB-LoadTrainData
+  acceptanceCriteria:
+    - 当存在匹配的 train_no 时返回完整对象
+    - 不存在时返回空
+  changeLog:
+    - date: "2025-11-15"
+      description: "新增车次详情查询接口。"
+
+- type: Database
+  id: DB-ComputePriceBySeat
+  description: 计算指定席别在查询区间内的票价
+  dependencies:
+    - DB-LoadTrainData
+  acceptanceCriteria:
+    - 票价为途经子区间席别价格的总和（若数据提供）
+    - 若缺少价格数据则返回0
+  changeLog:
+    - date: "2025-11-15"
+      description: "新增票价计算接口。"
+
+- type: Database
+  id: DB-ComputeSeatAvailability
+  description: 计算指定席别在查询区间内的余票数量
+  dependencies:
+    - DB-LoadTrainData
+  acceptanceCriteria:
+    - 相邻站查询直接返回对应席别空闲座位数
+    - 跨站查询需保证座位在整个区间内持续空闲
+    - 当席别不存在时返回占位符
+  changeLog:
+    - date: "2025-11-15"
+      description: "新增余票计算接口，遵循PRD 4.4余票规则。"

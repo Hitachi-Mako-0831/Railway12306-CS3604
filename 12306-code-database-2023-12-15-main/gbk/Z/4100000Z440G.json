@@ -1,0 +1,63 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "西安",
+        "train_class_name": "直特",
+        "is_start": "Y",
+        "service_type": "2",
+        "end_station_name": "北京西",
+        "arrive_time": "----",
+        "start_station_name": "西安",
+        "station_train_code": "Z44",
+        "arrive_day_diff": "0",
+        "start_time": "20:27",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "01:00",
+        "station_train_code": "Z44",
+        "station_name": "洛阳",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "01:04",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "04:33"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "05:45",
+        "station_train_code": "Z44",
+        "station_name": "石家庄",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "05:51",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "09:18"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "08:22",
+        "station_train_code": "Z44",
+        "station_name": "北京西",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "08:22",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "11:55"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

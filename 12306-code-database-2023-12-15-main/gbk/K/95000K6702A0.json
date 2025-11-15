@@ -1,0 +1,75 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "伊宁",
+        "train_class_name": "快速",
+        "is_start": "Y",
+        "service_type": "2",
+        "end_station_name": "乌鲁木齐",
+        "arrive_time": "22:30",
+        "start_station_name": "伊宁",
+        "station_train_code": "K6702",
+        "arrive_day_diff": "0",
+        "start_time": "22:30",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "04:57",
+        "station_train_code": "K6702",
+        "station_name": "奎屯",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "04:59",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "06:27"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "05:40",
+        "station_train_code": "K6702",
+        "station_name": "沙湾市",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "05:42",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "07:10"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "06:05",
+        "station_train_code": "K6702",
+        "station_name": "石河子",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "06:07",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "07:35"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "07:54",
+        "station_train_code": "K6702",
+        "station_name": "乌鲁木齐",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "07:54",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "09:24"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

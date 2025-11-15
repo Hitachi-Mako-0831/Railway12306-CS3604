@@ -6,8 +6,8 @@ const MainNavigation: React.FC = () => {
     <nav className="main-navigation">
       <div className="nav-container">
         <a href="/" className="nav-item">首页</a>
-        <a href="/tickets" className="nav-item">车票</a>
-        <a href="/group-service" className="nav-item">团组服务</a>
+        <a href="/trains" className="nav-item">车票</a>
+        <a href="/group-service" className="nav-item">团购服务</a>
         <a href="/member-service" className="nav-item">会员服务</a>
         <a href="/station-service" className="nav-item">站车服务</a>
         <a href="/business-service" className="nav-item">商旅服务</a>

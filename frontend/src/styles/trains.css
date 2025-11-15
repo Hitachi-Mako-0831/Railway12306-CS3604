@@ -1,0 +1,34 @@
+.trains-filter { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 12px; background: #fff }
+.filter-group { border: 1px solid #e5e5e5; border-radius: 6px; padding: 8px }
+.filter-title { display: flex; align-items: center; justify-content: space-between; font-size: 14px; color: #333; margin-bottom: 6px }
+.filter-items { display: flex; flex-wrap: wrap; gap: 8px }
+.filter-item { font-size: 13px; color: #222 }
+.collapse-btn { height: 28px; padding: 0 10px; border: 1px solid #cfd8e3; border-radius: 4px; background: #f8fafc; color: #333; cursor: pointer }
+.collapse-btn:hover { background: #eef5ff; border-color: #a8c2f7 }
+.search-bar { display: grid; grid-template-columns: 140px 1fr 1fr 200px 140px; align-items: end; gap: 12px; padding: 12px; background: #f7f9fc; border: 1px solid #e6effb }
+.search-type { display: flex; gap: 12px; align-items: center }
+.radio { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #333 }
+.search-field { display: flex; flex-direction: column; gap: 6px }
+.search-label { font-size: 12px; color: #666 }
+.search-input { height: 36px; padding: 0 10px; border: 1px solid #c9d8f3; border-radius: 4px; background: #fff; font-size: 14px }
+.search-input:focus { outline: none; border-color: #2f74ff; box-shadow: 0 0 0 2px rgba(47,116,255,0.15) }
+.search-action { display: flex; align-items: center; justify-content: center }
+.search-button { height: 36px; padding: 0 18px; background: #ff8c00; color: #fff; border: none; border-radius: 4px; font-size: 14px; cursor: pointer }
+.search-button:hover { background: #f07c00 }
+.error-text { margin-top: 4px; font-size: 12px; color: #e54d42 }
+.date-tabs { display: flex; gap: 8px; padding: 8px 12px; background: #fff; border-bottom: 1px solid #e5e5e5 }
+.date-tab { min-width: 64px; height: 32px; padding: 0 10px; border: 1px solid #cfd8e3; border-radius: 4px; background: #f8fafc; color: #333; cursor: pointer }
+.date-tab:hover { background: #eef5ff; border-color: #a8c2f7 }
+.date-tab.active { background: #2f74ff; border-color: #2f74ff; color: #fff }
+.train-table { width: 100%; border-collapse: collapse; background: #fff; margin-top: 8px }
+.train-table thead th { background: #2f74ff; color: #fff; font-weight: 600; height: 38px; border-right: 1px solid #dfe8ff }
+.train-table thead th:last-child { border-right: none }
+.train-table tbody td { height: 44px; border-bottom: 1px solid #eef2f7; color: #333 }
+.train-table tbody tr:nth-child(even) { background: #f7fbff }
+.train-table tbody tr:hover { background: #eef5ff }
+.cell-train { font-weight: 600; color: #2f74ff }
+.cell-time, .cell-duration, .cell-seat { text-align: center }
+.seat-status.available { color: #1abf70 }
+.seat-status.none { color: #a0a0a0 }
+.seat-status.count { color: #ff8c00 }
+.seat-status.dash { color: #999 }

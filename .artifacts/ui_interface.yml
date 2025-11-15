@@ -507,3 +507,110 @@
   changeLog:
     - date: "2025-11-10"
       description: "初始创建，隐私权政策页面组件。"
+
+- type: Frontend
+  id: UI-TrainsPage
+  description: 车次查询与筛选页面主容器
+  properties:
+    - name: initialQuery
+      type: object
+      description: "来自首页的初始查询参数（from、to、date、highspeed）"
+  state:
+    - query
+    - filters
+    - results
+    - error
+    - isLoading
+  dependencies:
+    - UI-TopNavigation
+    - UI-TrainSearchBar
+    - UI-TrainFilterBar
+    - UI-TrainListTable
+    - UI-BottomNavigation
+    - API-GET-SearchTrains
+  acceptanceCriteria:
+    - 页面背景为白色，包含顶部导航、搜索区、筛选区、列表区和底部导航
+    - 支持从URL自动填充搜索区输入（from、to、date、highspeed）
+    - 成功查询后在列表区展示匹配车次
+    - 无匹配结果时显示“暂无符合条件的车次”
+  changeLog:
+    - date: "2025-11-15"
+      description: "新增车次查询与筛选页面主容器。"
+
+- type: Frontend
+  id: UI-TrainSearchBar
+  description: 车次搜索区组件，提供出发地、到达地与日期输入及查询按钮
+  properties:
+    - name: value
+      type: object
+      description: "{ from, to, date } 当前输入值"
+    - name: onChange
+      type: function
+      description: "输入变化时回调"
+    - name: onSearch
+      type: function
+      description: "点击查询按钮时回调"
+  state:
+    - from
+    - to
+    - date
+    - errors
+  dependencies:
+    - API-GET-SearchTrains
+  acceptanceCriteria:
+    - 输入框占位为“简拼/全拼/汉字”，日期默认填充为当天
+    - 未填写出发/到达时执行查询需高亮提示错误
+    - 点击查询按钮触发 API-GET-SearchTrains 并返回结果
+  changeLog:
+    - date: "2025-11-15"
+      description: "新增车次搜索区组件。"
+
+- type: Frontend
+  id: UI-TrainFilterBar
+  description: 车次筛选条件组件，支持车次类型、出发站、到达站、席别筛选
+  properties:
+    - name: options
+      type: object
+      description: "筛选选项集合（类型、出发站、到达站、席别）"
+    - name: value
+      type: object
+      description: "当前已选的筛选条件"
+    - name: onChange
+      type: function
+      description: "筛选条件变化时回调"
+  state:
+    - selectedTypes
+    - selectedOrigins
+    - selectedDestinations
+    - selectedSeatTypes
+  dependencies:
+    - none
+  acceptanceCriteria:
+    - 默认提供“GC-高铁/城际”、“D-动车”类型选项
+    - 根据查询结果动态生成出发站、到达站与席别选项
+    - 勾选/取消勾选立即更新列表区的展示结果
+  changeLog:
+    - date: "2025-11-15"
+      description: "新增车次筛选条件组件。"
+
+- type: Frontend
+  id: UI-TrainListTable
+  description: 车次列表展示组件（表格），包含预订操作列
+  properties:
+    - name: data
+      type: array
+      description: "查询后的车次数据数组"
+    - name: onBook
+      type: function
+      description: "点击预订时回调"
+  state:
+    - none
+  dependencies:
+    - none
+  acceptanceCriteria:
+    - 表格列包含车次号、出发站/到达站、出发/到达时间、行程历时、各席别价格/余票
+    - 不提供的席别显示“--”，余票充足显示“有”，售罄显示“无”，少于20张显示具体数字
+    - 右侧提供“预订”按钮，点击进入订单确认流程（后续页面）
+  changeLog:
+    - date: "2025-11-15"
+      description: "新增车次列表展示组件。"

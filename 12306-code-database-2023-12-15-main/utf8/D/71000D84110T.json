@@ -1,0 +1,123 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "桂林北",
+        "train_class_name": "动车",
+        "is_start": "Y",
+        "service_type": "2",
+        "end_station_name": "北海",
+        "arrive_time": "----",
+        "start_station_name": "桂林北",
+        "station_train_code": "D8411",
+        "arrive_day_diff": "0",
+        "start_time": "16:30",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:40",
+        "station_train_code": "D8411",
+        "station_name": "桂林",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "16:43",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:10"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "17:03",
+        "station_train_code": "D8411",
+        "station_name": "永福南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "17:05",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "00:33"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "17:50",
+        "station_train_code": "D8411",
+        "station_name": "柳州",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "17:54",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "01:20"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "18:19",
+        "station_train_code": "D8411",
+        "station_name": "来宾北",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "18:21",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "01:49"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "19:03",
+        "station_train_code": "D8411",
+        "station_name": "南宁东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "19:24",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "02:33"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "19:59",
+        "station_train_code": "D8411",
+        "station_name": "钦州东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "20:01",
+        "wz_num": "--",
+        "station_no": "07",
+        "running_time": "03:29"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "20:24",
+        "station_train_code": "D8411",
+        "station_name": "合浦",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "20:26",
+        "wz_num": "--",
+        "station_no": "08",
+        "running_time": "03:54"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "20:39",
+        "station_train_code": "D8411",
+        "station_name": "北海",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "20:39",
+        "wz_num": "--",
+        "station_no": "09",
+        "running_time": "04:09"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

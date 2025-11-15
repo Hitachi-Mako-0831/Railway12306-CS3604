@@ -1,0 +1,123 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "井冈山",
+        "train_class_name": "快速",
+        "is_start": "Y",
+        "service_type": "2",
+        "end_station_name": "长沙",
+        "arrive_time": "----",
+        "start_station_name": "井冈山",
+        "station_train_code": "K2369",
+        "arrive_day_diff": "0",
+        "start_time": "14:26",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "14:50",
+        "station_train_code": "K2369",
+        "station_name": "龙市",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "14:54",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:24"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "15:16",
+        "station_train_code": "K2369",
+        "station_name": "炎陵",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "15:20",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "00:50"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "15:51",
+        "station_train_code": "K2369",
+        "station_name": "茶陵南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "15:54",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "01:25"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:10",
+        "station_train_code": "K2369",
+        "station_name": "攸县南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "16:13",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "01:44"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:25",
+        "station_train_code": "K2369",
+        "station_name": "安仁",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "16:28",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "01:59"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "17:30",
+        "station_train_code": "K2368",
+        "station_name": "衡阳",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "17:52",
+        "wz_num": "--",
+        "station_no": "07",
+        "running_time": "03:04"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "19:18",
+        "station_train_code": "K2368",
+        "station_name": "株洲",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "19:24",
+        "wz_num": "--",
+        "station_no": "08",
+        "running_time": "04:52"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "20:08",
+        "station_train_code": "K2368",
+        "station_name": "长沙",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "20:08",
+        "wz_num": "--",
+        "station_no": "09",
+        "running_time": "05:42"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

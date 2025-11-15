@@ -1,0 +1,75 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "香坊",
+        "train_class_name": "快速",
+        "is_start": "Y",
+        "service_type": "1",
+        "end_station_name": "五常",
+        "arrive_time": "09:16",
+        "start_station_name": "香坊",
+        "station_train_code": "K5182",
+        "arrive_day_diff": "0",
+        "start_time": "09:16",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:26",
+        "station_train_code": "K5182",
+        "station_name": "孙家",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:28",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:10"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "09:42",
+        "station_train_code": "K5182",
+        "station_name": "平房",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "09:45",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "00:26"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "10:09",
+        "station_train_code": "K5182",
+        "station_name": "牛家",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "10:11",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "00:53"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "11:05",
+        "station_train_code": "K5182",
+        "station_name": "五常",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "11:05",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "01:49"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

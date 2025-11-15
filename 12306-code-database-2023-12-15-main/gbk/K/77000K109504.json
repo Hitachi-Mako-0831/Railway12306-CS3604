@@ -1,0 +1,159 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "重庆北",
+        "train_class_name": "快速",
+        "is_start": "Y",
+        "service_type": "2",
+        "end_station_name": "广州",
+        "arrive_time": "----",
+        "start_station_name": "重庆北",
+        "station_train_code": "K1095",
+        "arrive_day_diff": "0",
+        "start_time": "09:40",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "10:47",
+        "station_train_code": "K1095",
+        "station_name": "涪陵",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "10:52",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "01:07"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "11:48",
+        "station_train_code": "K1095",
+        "station_name": "武隆",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "11:52",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "02:08"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "15:26",
+        "station_train_code": "K1095",
+        "station_name": "张家界西",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "15:37",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "05:46"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:58",
+        "station_train_code": "K1095",
+        "station_name": "桃源",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "17:10",
+        "wz_num": "--",
+        "station_no": "07",
+        "running_time": "07:18"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "18:17",
+        "station_train_code": "K1095",
+        "station_name": "汉寿南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "18:21",
+        "wz_num": "--",
+        "station_no": "08",
+        "running_time": "08:37"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "18:56",
+        "station_train_code": "K1095",
+        "station_name": "益阳",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "19:01",
+        "wz_num": "--",
+        "station_no": "09",
+        "running_time": "09:16"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "19:29",
+        "station_train_code": "K1095",
+        "station_name": "宁乡",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "19:33",
+        "wz_num": "--",
+        "station_no": "10",
+        "running_time": "09:49"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "20:21",
+        "station_train_code": "K1095",
+        "station_name": "长沙",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "20:57",
+        "wz_num": "--",
+        "station_no": "11",
+        "running_time": "10:41"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "21:35",
+        "station_train_code": "K1095",
+        "station_name": "株洲",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "21:41",
+        "wz_num": "--",
+        "station_no": "12",
+        "running_time": "11:55"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "23:05",
+        "station_train_code": "K1095",
+        "station_name": "衡阳",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "23:35",
+        "wz_num": "--",
+        "station_no": "13",
+        "running_time": "13:25"
+      },
+      {
+        "arrive_day_str": "次日到达",
+        "arrive_time": "06:00",
+        "station_train_code": "K1095",
+        "station_name": "广州",
+        "arrive_day_diff": "1",
+        "OT": [],
+        "start_time": "06:00",
+        "wz_num": "--",
+        "station_no": "14",
+        "running_time": "20:20"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

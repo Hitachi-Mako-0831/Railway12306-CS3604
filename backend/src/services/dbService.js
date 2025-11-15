@@ -94,10 +94,40 @@ class DatabaseService {
       )
     `;
 
+    // 创建订单表
+    const createOrdersTable = `
+      CREATE TABLE IF NOT EXISTS orders (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        order_number TEXT UNIQUE,
+        train_no TEXT,
+        origin TEXT,
+        destination TEXT,
+        departure_date TEXT,
+        seat_type TEXT,
+        quantity INTEGER,
+        total_price REAL,
+        status TEXT DEFAULT 'pending',
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+      )
+    `;
+
+    // 创建订单乘客表
+    const createOrderPassengersTable = `
+      CREATE TABLE IF NOT EXISTS order_passengers (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        order_id INTEGER,
+        name TEXT,
+        seat_type TEXT,
+        FOREIGN KEY (order_id) REFERENCES orders(id) ON DELETE CASCADE
+      )
+    `;
+
     this.db.run(createUsersTable);
     this.db.run(createVerificationCodesTable);
     this.db.run(createEmailVerificationCodesTable);
     this.db.run(createSessionsTable);
+    this.db.run(createOrdersTable);
+    this.db.run(createOrderPassengersTable);
   }
 
   // 通用查询方法 - 返回单行

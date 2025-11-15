@@ -1,0 +1,87 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "贵阳",
+        "train_class_name": "快速",
+        "is_start": "Y",
+        "service_type": "2",
+        "end_station_name": "昭通",
+        "arrive_time": "----",
+        "start_station_name": "贵阳",
+        "station_train_code": "K9501",
+        "arrive_day_diff": "0",
+        "start_time": "10:42",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "12:01",
+        "station_train_code": "K9501",
+        "station_name": "安顺",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "12:05",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "01:19"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "12:51",
+        "station_train_code": "K9501",
+        "station_name": "六枝",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "12:55",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "02:09"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "14:38",
+        "station_train_code": "K9504",
+        "station_name": "六盘水",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "14:46",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "03:56"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "16:04",
+        "station_train_code": "K9504",
+        "station_name": "草海",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "16:11",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "05:22"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "18:13",
+        "station_train_code": "K9504",
+        "station_name": "昭通",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "18:13",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "07:31"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

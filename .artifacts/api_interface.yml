@@ -492,3 +492,69 @@
   changeLog:
     - date: "2025-11-10"
       description: "初始创建，支持隐私权政策页面访问。"
+
+- type: Backend
+  id: API-GET-SearchTrains
+  route: GET /api/trains/search
+  description: 按出发地、到达地、日期查询直达车次，支持高铁/动车筛选
+  input:
+    type: Query
+    params:
+      from: string
+      to: string
+      date: string
+      highspeed: string # '1' 或 '0'，可选
+  output:
+    success:
+      statusCode: 200
+      body:
+        success: true
+        trains: "array"
+    error:
+      - statusCode: 400
+        body: { success: false, message: "缺少必要参数：from、to、date" }
+      - statusCode: 500
+        body: { success: false, message: "查询失败" }
+  dependencies:
+    - DB-LoadTrainData
+    - DB-ListTrainsByRoute
+    - DB-FilterTrainsByType
+    - DB-ComputePriceBySeat
+  acceptanceCriteria:
+    - 当提供有效的 from、to、date 时返回匹配车次列表
+    - 当 highspeed=1 时仅返回高铁/动车车次（G/高速、D）
+    - 列表项包含车次号、出发/到达站、出发/到达时间、行程历时
+    - 列表项包含席别价格字段（商务/一等/二等）
+    - 不返回换乘方案，仅直达车次
+  changeLog:
+    - date: "2025-11-15"
+      description: "新增车次查询接口，支持高铁/动车筛选与基础票价。"
+
+- type: Backend
+  id: API-GET-TrainDetail
+  route: GET /api/trains/:trainNo/detail
+  description: 获取指定车次的详细信息
+  input:
+    type: Path
+    params:
+      trainNo: string
+  output:
+    success:
+      statusCode: 200
+      body:
+        success: true
+        train: "object"
+    error:
+      - statusCode: 404
+        body: { success: false, message: "车次不存在" }
+      - statusCode: 500
+        body: { success: false, message: "获取详情失败" }
+  dependencies:
+    - DB-LoadTrainData
+    - DB-GetTrainDetail
+  acceptanceCriteria:
+    - 当 trainNo 存在时返回完整车次信息
+    - 当 trainNo 不存在时返回 404 错误
+  changeLog:
+    - date: "2025-11-15"
+      description: "新增车次详情接口。"

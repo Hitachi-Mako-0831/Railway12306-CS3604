@@ -1,0 +1,75 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "贵阳",
+        "train_class_name": "快速",
+        "is_start": "Y",
+        "service_type": "2",
+        "end_station_name": "大方南",
+        "arrive_time": "----",
+        "start_station_name": "贵阳",
+        "station_train_code": "K9355",
+        "arrive_day_diff": "0",
+        "start_time": "06:50",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "08:09",
+        "station_train_code": "K9355",
+        "station_name": "安顺",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "08:13",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "01:19"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "08:55",
+        "station_train_code": "K9355",
+        "station_name": "普定",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "08:59",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "02:05"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "10:01",
+        "station_train_code": "K9355",
+        "station_name": "织金",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "10:05",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "03:11"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "11:10",
+        "station_train_code": "K9358",
+        "station_name": "大方南",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "11:10",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "04:20"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}

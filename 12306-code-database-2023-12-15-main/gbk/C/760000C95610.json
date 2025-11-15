@@ -1,0 +1,99 @@
+{
+  "validateMessagesShowId": "_validatorMessage",
+  "status": true,
+  "httpstatus": 200,
+  "data": {
+    "data": [
+      {
+        "arrive_day_str": "当日到达",
+        "station_name": "南部",
+        "train_class_name": "动车",
+        "is_start": "Y",
+        "service_type": "2",
+        "end_station_name": "西昌西",
+        "arrive_time": "10:06",
+        "start_station_name": "南部",
+        "station_train_code": "C956",
+        "arrive_day_diff": "0",
+        "start_time": "10:06",
+        "station_no": "01",
+        "wz_num": "--",
+        "running_time": "00:00"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "10:34",
+        "station_train_code": "C956",
+        "station_name": "南充北",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "10:36",
+        "wz_num": "--",
+        "station_no": "02",
+        "running_time": "00:28"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "10:59",
+        "station_train_code": "C957",
+        "station_name": "蓬溪",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "11:01",
+        "wz_num": "--",
+        "station_no": "03",
+        "running_time": "00:53"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "11:15",
+        "station_train_code": "C957",
+        "station_name": "遂宁",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "11:17",
+        "wz_num": "--",
+        "station_no": "04",
+        "running_time": "01:09"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "12:27",
+        "station_train_code": "C957",
+        "station_name": "成都东",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "12:35",
+        "wz_num": "--",
+        "station_no": "05",
+        "running_time": "02:21"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "13:17",
+        "station_train_code": "C957",
+        "station_name": "眉山",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "13:19",
+        "wz_num": "--",
+        "station_no": "06",
+        "running_time": "03:11"
+      },
+      {
+        "arrive_day_str": "当日到达",
+        "arrive_time": "15:46",
+        "station_train_code": "C957",
+        "station_name": "西昌西",
+        "arrive_day_diff": "0",
+        "OT": [],
+        "start_time": "15:46",
+        "wz_num": "--",
+        "station_no": "07",
+        "running_time": "05:40"
+      }
+    ]
+  },
+  "messages": [],
+  "validateMessages": {}
+}
