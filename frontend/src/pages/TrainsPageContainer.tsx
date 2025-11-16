@@ -17,7 +17,7 @@ const TrainsPageContainer: React.FC = () => {
     highspeed: (params.get('highspeed') as '1' | '0') || undefined,
   })
   const [filters, setFilters] = useState<{ types: string[]; origins: string[]; destinations: string[]; seatTypes: string[] }>(() => ({
-    types: query.highspeed === '1' ? ['GC', 'D'] : [],
+    types: ['GC', 'D'],
     origins: [],
     destinations: [],
     seatTypes: [],
@@ -26,6 +26,10 @@ const TrainsPageContainer: React.FC = () => {
   const [results, setResults] = useState<any[]>([])
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
+  const [lastRefreshAt, setLastRefreshAt] = useState<number | null>(null)
+  const [authToken, setAuthToken] = useState<string | null>(() => {
+    try { return localStorage.getItem('auth_token') } catch { return null }
+  })
 
   useEffect(() => {
     const auto = async () => {
@@ -47,9 +51,11 @@ const TrainsPageContainer: React.FC = () => {
       const origins = Array.from(new Set(list.map((t: any) => t.departure).filter(Boolean)))
       const destinations = Array.from(new Set(list.map((t: any) => t.arrival).filter(Boolean)))
       const seatTypes: string[] = []
-      if (list.some((t: any) => Number(t.businessPrice) > 0)) seatTypes.push('business')
-      if (list.some((t: any) => Number(t.firstClassPrice) > 0)) seatTypes.push('firstClass')
-      if (list.some((t: any) => Number(t.secondClassPrice) > 0)) seatTypes.push('secondClass')
+      if (list.some((t: any) => Number(t.businessPrice) > 0)) seatTypes.push('商务座')
+      if (list.some((t: any) => Number(t.firstClassPrice) > 0)) seatTypes.push('一等座')
+      if (list.some((t: any) => Number(t.secondClassPrice) > 0)) seatTypes.push('二等座')
+      if (list.some((t: any) => Number(t.softSleeperPrice) > 0)) seatTypes.push('软卧')
+      if (list.some((t: any) => Number(t.hardSleeperPrice) > 0)) seatTypes.push('硬卧')
       setOptions({ types: ['GC', 'D'], origins, destinations, seatTypes })
       const next = new URLSearchParams()
       next.set('from', query.from || '')
@@ -57,6 +63,7 @@ const TrainsPageContainer: React.FC = () => {
       next.set('date', query.date || '')
       if (query.highspeed === '1') next.set('highspeed', '1')
       navigate(`/trains?${next.toString()}`)
+      setLastRefreshAt(Date.now())
     } catch (e) {
       setError('查询失败，请稍后重试')
     } finally {
@@ -84,10 +91,14 @@ const TrainsPageContainer: React.FC = () => {
       const hasBusiness = Number(t.businessPrice) > 0
       const hasFirst = Number(t.firstClassPrice) > 0
       const hasSecond = Number(t.secondClassPrice) > 0
+      const hasSoft = Number(t.softSleeperPrice) > 0
+      const hasHard = Number(t.hardSleeperPrice) > 0
       return (
-        (filters.seatTypes.includes('business') && hasBusiness) ||
-        (filters.seatTypes.includes('firstClass') && hasFirst) ||
-        (filters.seatTypes.includes('secondClass') && hasSecond)
+        (filters.seatTypes.includes('商务座') && hasBusiness) ||
+        (filters.seatTypes.includes('一等座') && hasFirst) ||
+        (filters.seatTypes.includes('二等座') && hasSecond) ||
+        (filters.seatTypes.includes('软卧') && hasSoft) ||
+        (filters.seatTypes.includes('硬卧') && hasHard)
       )
     })
     return list
@@ -144,7 +155,39 @@ const TrainsPageContainer: React.FC = () => {
       <section aria-label="list">
         {loading && <div>加载中...</div>}
         {!loading && filtered.length === 0 && <div>暂无符合条件的车次</div>}
-        {!loading && filtered.length > 0 && <TrainListTable data={filtered} />}
+        {!loading && filtered.length > 0 && (
+          <TrainListTable
+            data={filtered}
+            onBook={(trainNo) => {
+              if (!authToken) {
+                const go = window.confirm('请先登录！')
+                if (go) navigate('/login')
+                return
+              }
+              if (lastRefreshAt && Date.now() - lastRefreshAt > 5 * 60 * 1000) {
+                const r = window.confirm('页面内容已过期，请重新查询！')
+                if (r) doSearch()
+                return
+              }
+              const dep = filtered.find((t) => String(t.trainNumber) === String(trainNo))
+              const todayStr = new Date().toISOString().slice(0,10)
+              const isToday = (query.date || todayStr) === todayStr
+              let near = false
+              if (isToday && dep && dep.departureTime) {
+                const [hh, mm] = String(dep.departureTime).split(':').map((x) => Number(x))
+                const now = new Date()
+                const depTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), hh || 0, mm || 0, 0)
+                const diff = (depTime.getTime() - now.getTime()) / (1000 * 60 * 60)
+                near = diff > 0 && diff < 3
+              }
+              if (near) {
+                const ok = window.confirm('您选择的列车距开车时间很近了，进站约需20分钟，请确保有足够的时间办理安全检查、实名制验证及检票等手续，以免耽误您的旅行。')
+                if (!ok) return
+              }
+              alert('购票页面加载中...')
+            }}
+          />
+        )}
         {error && <div>{error}</div>}
       </section>
       <footer />

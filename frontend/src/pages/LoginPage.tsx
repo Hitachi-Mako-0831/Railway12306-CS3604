@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { PATHS } from '../constants/routes'
 import { login as apiLogin, verifyLogin as apiVerifyLogin } from '../api/auth'
-import TopNavigation from '../components/TopNavigation'
 import LoginForm from '../components/LoginForm'
-import BottomNavigation from '../components/BottomNavigation'
 import SmsVerificationModal from '../components/SmsVerificationModal'
 import '../components/LoginPage.css'
 
@@ -89,7 +87,6 @@ const LoginPage: React.FC = () => {
 
   return (
     <div className="login-page">
-      <TopNavigation onLogoClick={() => console.log('Logo clicked')} showWelcomeLogin={true} />
       
       <div className="login-content">
         <div className="login-promotion">
@@ -108,7 +105,6 @@ const LoginPage: React.FC = () => {
         </div>
       </div>
       
-      <BottomNavigation />
       
       {showSmsModal && sessionId && (
         <SmsVerificationModal

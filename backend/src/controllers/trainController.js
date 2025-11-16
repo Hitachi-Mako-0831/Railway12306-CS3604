@@ -20,6 +20,8 @@ function toResultItem(t) {
   const businessSeat = 18;
   const firstClassSeat = 80;
   const secondClassSeat = 200;
+  const softSleeperSeat = 40;
+  const hardSleeperSeat = 60;
   return {
     id: t.train_no,
     trainNumber: t.train_no,
@@ -34,6 +36,10 @@ function toResultItem(t) {
     businessPrice: fares.business || 0,
     firstClassPrice: fares.first_class || 0,
     secondClassPrice: fares.second_class || 0,
+    softSleeperSeat,
+    hardSleeperSeat,
+    softSleeperPrice: fares.soft_sleeper || 0,
+    hardSleeperPrice: fares.hard_sleeper || 0,
   };
 }
 

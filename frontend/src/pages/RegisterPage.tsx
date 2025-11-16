@@ -2,9 +2,6 @@ import React, { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { PATHS } from '../constants/routes'
 import { register as apiRegister, sendRegistrationVerificationCode, completeRegistration } from '../api/register'
-import TopNavigation from '../components/TopNavigation'
-import MainNavigation from '../components/MainNavigation'
-import BottomNavigation from '../components/BottomNavigation'
 import RegisterForm from '../components/RegisterForm'
 import RegistrationVerificationModal from '../components/RegistrationVerificationModal'
 import './RegisterPage.css'
@@ -141,8 +138,6 @@ const RegisterPage: React.FC = () => {
 
   return (
     <div className="register-page">
-      <TopNavigation />
-      <MainNavigation />
       <main className="register-main">
         {/* 面包屑导航 */}
         <div className="breadcrumb">
@@ -165,7 +160,6 @@ const RegisterPage: React.FC = () => {
           </div>
         </div>
       </main>
-      <BottomNavigation />
 
       {/* 验证弹窗 */}
       {showVerificationModal && registrationData && (

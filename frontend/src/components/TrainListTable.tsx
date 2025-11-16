@@ -6,7 +6,7 @@ type Props = {
   onBook?: (trainNo: string) => void
 }
 
-const headers = ['车次', '出发站', '到达站', '出发时间', '到达时间', '历时', '商务座', '一等座', '二等座']
+const headers = ['车次', '出发站', '到达站', '出发时间', '到达时间', '历时', '商务座', '一等座', '二等座', '软卧', '硬卧', '操作']
 
 const statusSeat = (count: number, price: number) => {
   if (!Number.isFinite(price) || price <= 0) return <span className="seat-status dash">--</span>
@@ -35,9 +35,20 @@ const TrainListTable: React.FC<Props> = ({ data = [], onBook }) => {
             <td className="cell-time">{t.departureTime}</td>
             <td className="cell-time">{t.arrivalTime}</td>
             <td className="cell-duration">{t.duration}</td>
-            <td className="cell-seat">{statusSeat(t.businessSeat, t.businessPrice)}</td>
-            <td className="cell-seat">{statusSeat(t.firstClassSeat, t.firstClassPrice)}</td>
-            <td className="cell-seat">{statusSeat(t.secondClassSeat, t.secondClassPrice)}</td>
+            <td className="cell-seat">{statusSeat(Number(t.businessSeat), Number(t.businessPrice))}</td>
+            <td className="cell-seat">{statusSeat(Number(t.firstClassSeat), Number(t.firstClassPrice))}</td>
+            <td className="cell-seat">{statusSeat(Number(t.secondClassSeat), Number(t.secondClassPrice))}</td>
+            <td className="cell-seat">{statusSeat(Number(t.softSleeperSeat), Number(t.softSleeperPrice))}</td>
+            <td className="cell-seat">{statusSeat(Number(t.hardSleeperSeat), Number(t.hardSleeperPrice))}</td>
+            <td className="cell-action">
+              <button
+                className="book-btn"
+                onClick={() => onBook?.(String(t.trainNumber))}
+                disabled={
+                  (Number(t.businessSeat) === 0 && Number(t.firstClassSeat) === 0 && Number(t.secondClassSeat) === 0 && Number(t.softSleeperSeat) === 0 && Number(t.hardSleeperSeat) === 0)
+                }
+              >预订</button>
+            </td>
           </tr>
         ))}
       </tbody>

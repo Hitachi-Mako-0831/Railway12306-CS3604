@@ -1,8 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import TopNavigation from '../components/TopNavigation'
-import MainNavigation from '../components/MainNavigation'
-import BottomNavigation from '../components/BottomNavigation'
 import StationPicker from '../components/StationPicker'
 import CalendarPopover from '../components/CalendarPopover'
 import '../styles/base.css'
@@ -113,8 +110,6 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="home-page">
-      <TopNavigation />
-      <MainNavigation />
       <div className="home-main">
         <div className="carousel" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
           <div className="slides" style={{ transform: `translateX(-${idx * 100}%)` }}>
@@ -279,7 +274,6 @@ const HomePage: React.FC = () => {
           <button className="primary-btn" onClick={submit}>查 询</button>
         </div>
       </div>
-      <BottomNavigation />
     </div>
   )
 }
