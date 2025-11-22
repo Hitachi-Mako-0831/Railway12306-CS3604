@@ -3,14 +3,14 @@ import './BottomNavigation.css';
 
 const BottomNavigation: React.FC = () => {
   return (
-    <footer className="bottom-navigation">
+    <footer className="bottom-navigation" data-testid="bottom-navigation">
       <div className="bottom-content">
         <div className="qr-codes-section">
           <div className="friendship-links">
             <div className="links-title">友情链接</div>
             <div className="links-grid">
               <a href="http://www.china-railway.com.cn/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/link01.png" alt="中国国家铁路集团" />
+                <img src="/images/link01.png" alt="友情链接" />
               </a>
               <a href="http://www.china-ric.com/" target="_blank" rel="noopener noreferrer">
                 <img src="/images/link02.png" alt="中国铁路财产保险自保有限公司" />

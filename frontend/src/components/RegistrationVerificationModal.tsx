@@ -76,50 +76,55 @@ const RegistrationVerificationModal: React.FC<RegistrationVerificationModalProps
             </div>
           ) : (
             <>
-              {/* 验证码发送提示 */}
-              <p className="verification-message">
-                验证码已发送至{phoneNumber}
-              </p>
+              <div className="instruction-box" role="note" aria-label="手机双向验证说明">
+                <div className="instruction-icon" aria-hidden="true">👤</div>
+                <div className="instruction-content">
+                  为了保护您的信息安全，便于今后为您服务，请按以下程序进行手机双向核验：<br/>
+                  <strong>第一步：</strong>请使用手机向12306发送短信“999”，以便确认您的手机可以联络。<br/>
+                  <strong>第二步：</strong>12306接收到短信后将给您的手机回复六位数字短信，请您在十分钟内将六位数字短信填写在下方空白框中，并点击“完成注册”按钮。
+                </div>
+              </div>
 
-              {/* 验证码输入表单 */}
+              <p className="verification-message">验证码已发送至{phoneNumber}</p>
+
               <form className="verification-form" onSubmit={handleSubmit}>
-            <div className="form-row">
-              <label className="form-label">验证码：</label>
-              <input
-                type="text"
-                className="form-input"
-                value={verificationCode}
-                onChange={(e) => {
-                  const value = e.target.value.replace(/\D/g, ''); // 只允许数字
-                  setVerificationCode(value.slice(0, 6));
-                  setError('');
-                }}
-                maxLength={6}
-                placeholder="请输入6位验证码"
-              />
-            </div>
+                <div className="form-row">
+                  <label className="form-label">验证码：</label>
+                  <input
+                    type="text"
+                    className="form-input"
+                    value={verificationCode}
+                    onChange={(e) => {
+                      const value = e.target.value.replace(/\D/g, ''); // 只允许数字
+                      setVerificationCode(value.slice(0, 6));
+                      setError('');
+                    }}
+                    maxLength={6}
+                    placeholder="请输入6位验证码"
+                  />
+                </div>
 
             {(error || externalError) && (
               <div className="error-message">{externalError || error}</div>
             )}
 
-            {/* 按钮区域 */}
-            <div className="button-group">
-              <button 
-                type="submit" 
-                className="complete-button"
-              >
-                完成注册
-              </button>
-              <button 
-                type="button" 
-                className="back-button"
-                onClick={onBack}
-              >
-                返回修改
-              </button>
-            </div>
-          </form>
+            
+                <div className="button-group">
+                  <button 
+                    type="submit" 
+                    className="complete-button"
+                  >
+                    完成注册
+                  </button>
+                  <button 
+                    type="button" 
+                    className="back-button"
+                    onClick={onBack}
+                  >
+                    返回修改
+                  </button>
+                </div>
+              </form>
             </>
           )}
         </div>

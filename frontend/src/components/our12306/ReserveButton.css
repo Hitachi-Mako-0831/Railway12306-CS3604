@@ -1,0 +1,4 @@
+/* copied styles */
+.reserve-button{padding:6px 18px;background-color:#0080ff;color:#fff;border:none;border-radius:3px;cursor:pointer;font-size:13px;font-weight:500;transition:all .2s ease;white-space:nowrap}
+.reserve-button:hover:not(:disabled){background-color:#1a90ff}
+.reserve-button:disabled,.reserve-button.soldout{background:linear-gradient(to bottom,#d9d9d9 0%,#ccc 100%);cursor:not-allowed;opacity:.6}

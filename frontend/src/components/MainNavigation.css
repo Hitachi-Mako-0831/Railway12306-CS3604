@@ -1,39 +1,19 @@
 /* 主导航栏样式 - 12306蓝色导航 */
-.main-navigation {
-  background: linear-gradient(to bottom, #3ba3e2 0%, #2a8bc7 100%);
-  border-bottom: 2px solid #2180b0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+.main-navigation { background:#3b99fc; border-bottom:1px solid #dedede; }
 
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  height: 48px;
-  padding: 0 20px;
-}
+.nav-container { max-width:1200px; margin:0 auto; display:flex; align-items:center; height:40px; padding:0 8px; }
 
-.nav-item {
-  color: white;
-  text-decoration: none;
-  padding: 12px 20px;
-  font-size: 15px;
-  font-weight: 500;
-  transition: all 0.3s;
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
+.nav-item { color:#fff; text-decoration:none; padding:0 16px; font-size:14px; position:relative; display:flex; align-items:center; height:40px; line-height:40px; }
 
-.nav-item:hover {
-  background: rgba(255, 255, 255, 0.15);
-}
+.nav-item:hover { background: rgba(255,255,255,0.15); }
 
-.nav-item:active {
-  background: rgba(255, 255, 255, 0.25);
-}
+.nav-item:active { background: rgba(255,255,255,0.25); }
+
+/* 变更说明：兼容来源项目类名与下拉箭头视觉 */
+.hdr-icon { display:inline-block; }
+.hdr-down { width:0; height:0; border-left:5px solid transparent; border-right:5px solid transparent; border-top:7px solid #fff; margin-left:6px; }
+.nav-hd { display:block; }
+.nav-hd::before, .nav-hd::after, .nav-item::before, .nav-item::after { content:none !important; }
 
 /* 响应式适配 */
 @media (max-width: 1024px) {

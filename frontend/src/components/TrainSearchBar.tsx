@@ -48,13 +48,13 @@ const TrainSearchBar: React.FC<Props> = ({ value, onChange, onSearch }) => {
       <button type="button" className="swap-btn" aria-label="交换" title="交换" onClick={() => { const tmp = from; setFrom(to); setTo(tmp); setFromErr(''); setToErr('') }} />
       <div className="search-field">
         <span className="search-label">目的地</span>
-        <input className="search-input" placeholder="简拼/全拼/汉字" value={to} onChange={(e) => { const v = e.target.value; setTo(v); if (v) setToErr('') }} />
+        <input className="search-input" placeholder="到达站" value={to} onChange={(e) => { const v = e.target.value; setTo(v); if (v) setToErr('') }} />
         {toErr && <div className="error-text">{toErr}</div>}
       </div>
       <div className="search-field">
         <span className="search-label">出发日</span>
         <div className="date-field">
-          <input className="search-input" placeholder="YYYY-MM-DD" value={date} readOnly />
+          <input className="search-input" placeholder="YYYY-MM-DD(返)" value={date} readOnly />
           <span className="calendar-icon active" aria-hidden />
         </div>
       </div>

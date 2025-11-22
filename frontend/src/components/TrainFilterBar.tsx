@@ -9,7 +9,8 @@ type Props = {
 
 const TrainFilterBar: React.FC<Props> = ({ options, value, onChange }) => {
   const types = options?.types || ['GC', 'D']
-  const selectedTypes = new Set(value?.types || [])
+  const [typesState, setTypesState] = useState<string[]>(value?.types || [])
+  const selectedTypes = new Set(typesState)
   const selectedOrigins = new Set(value?.origins || [])
   const selectedDestinations = new Set(value?.destinations || [])
   const selectedSeatTypes = new Set(value?.seatTypes || [])
@@ -17,7 +18,9 @@ const TrainFilterBar: React.FC<Props> = ({ options, value, onChange }) => {
     const next = new Set(selectedTypes)
     if (next.has(key)) next.delete(key)
     else next.add(key)
-    onChange?.({ types: Array.from(next) })
+    const arr = Array.from(next)
+    setTypesState(arr)
+    onChange?.({ types: arr })
   }
   const toggleOrigins = (key: string) => {
     const next = new Set(selectedOrigins)
@@ -49,10 +52,10 @@ const TrainFilterBar: React.FC<Props> = ({ options, value, onChange }) => {
         <span className="filter-label">车次类型:</span>
         <button type="button" className="tag-all">全部</button>
         {types.includes('GC') && (
-          <label className="filter-item"><input type="checkbox" aria-label="GC-高铁/城际" checked={selectedTypes.has('GC')} onChange={() => toggleTypes('GC')} />GC-高铁/城际</label>
+          <label className="filter-item"><input type="checkbox" aria-label="GC-高铁/城际" defaultChecked={selectedTypes.has('GC')} onChange={() => toggleTypes('GC')} />GC-高铁/城际</label>
         )}
         {types.includes('D') && (
-          <label className="filter-item"><input type="checkbox" aria-label="D-动车" checked={selectedTypes.has('D')} onChange={() => toggleTypes('D')} />D-动车</label>
+          <label className="filter-item"><input type="checkbox" aria-label="D-动车" defaultChecked={selectedTypes.has('D')} onChange={() => toggleTypes('D')} />D-动车</label>
         )}
         <label className="filter-item disabled"><input type="checkbox" disabled />Z-直达</label>
         <label className="filter-item disabled"><input type="checkbox" disabled />T-特快</label>

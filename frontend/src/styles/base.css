@@ -18,3 +18,12 @@
   --focus-shadow-primary: rgba(24, 144, 255, 0.2);
   --focus-shadow-input: rgba(64, 169, 255, 0.1);
 }
+
+/* 仅为 div 与 span 元素的汉字提供宋体优先的字体栈；
+   拉丁字符优先使用系统/西文字体，浏览器将按字形逐字回退到宋体 */
+div, span {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    "SimSun", "Songti SC", "STSong", "Noto Serif CJK SC", "Noto Sans CJK SC",
+    sans-serif !important;
+}

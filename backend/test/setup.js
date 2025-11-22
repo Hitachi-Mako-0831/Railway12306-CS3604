@@ -15,7 +15,7 @@ if (fs.existsSync(testDbPath)) {
 }
 
 // 导入dbService以初始化数据库
-const dbService = require('../src/services/dbService')
+const dbService = require('../src/domain-providers/dbService')
 
 // 给数据库一点时间来初始化
 beforeAll(async () => {

@@ -4,6 +4,7 @@ import { PATHS } from '../constants/routes'
 import { register as apiRegister, sendRegistrationVerificationCode, completeRegistration } from '../api/register'
 import RegisterForm from '../components/RegisterForm'
 import RegistrationVerificationModal from '../components/RegistrationVerificationModal'
+import ConfirmModal from '../components/our12306/ConfirmModal'
 import './RegisterPage.css'
 
 interface RegistrationData {
@@ -25,6 +26,8 @@ const RegisterPage: React.FC = () => {
   const [registrationData, setRegistrationData] = useState<RegistrationData | null>(null)
   const [isRegistrationSuccess, setIsRegistrationSuccess] = useState(false)
   const [verificationError, setVerificationError] = useState('')
+  const [pageError, setPageError] = useState('')
+  const [showCloseConfirm, setShowCloseConfirm] = useState(false)
 
   const handleSubmit = async (data: RegistrationData) => {
     console.log('Registration submitted:', data)
@@ -35,7 +38,7 @@ const RegisterPage: React.FC = () => {
       
       const sessionId = registerResponse.sessionId
       if (!sessionId) {
-        alert('注册失败：未获取到会话ID')
+        setPageError('注册失败：未获取到会话ID')
         return
       }
       
@@ -61,14 +64,14 @@ const RegisterPage: React.FC = () => {
         setShowVerificationModal(true)
       } catch (verifyError: any) {
         console.error('Send verification code error:', verifyError)
-        alert(verifyError.response?.data?.error || '发送验证码失败')
+        setPageError(verifyError.response?.data?.error || '发送验证码失败')
       }
     } catch (error: any) {
       console.error('Registration error:', error)
       if (error.response?.data?.error) {
-        alert(error.response.data.error)
+        setPageError(error.response.data.error)
       } else {
-        alert('注册失败，请稍后重试')
+        setPageError('注册失败，请稍后重试')
       }
     }
   }
@@ -124,12 +127,7 @@ const RegisterPage: React.FC = () => {
       setVerificationError('')
       return
     }
-    
-    if (window.confirm('确定要关闭验证弹窗吗？关闭后需要重新提交注册信息。')) {
-      setShowVerificationModal(false)
-      setRegistrationData(null)
-      setVerificationError('')
-    }
+    setShowCloseConfirm(true)
   }
 
   const handleNavigateToLogin = () => {
@@ -145,6 +143,19 @@ const RegisterPage: React.FC = () => {
           <span className="breadcrumb-separator">&gt;</span>
           <span>注册</span>
         </div>
+
+        {pageError && (
+          <div role="alert" aria-live="polite" style={{
+            maxWidth: 1200,
+            margin: '0 auto 10px',
+            padding: '10px 16px',
+            color: '#a8071a',
+            background: '#fff1f0',
+            border: '1px solid #ffa39e'
+          }}>
+            {pageError}
+          </div>
+        )}
 
         {/* 注册表单容器 */}
         <div className="register-container">
@@ -173,6 +184,22 @@ const RegisterPage: React.FC = () => {
           externalError={verificationError}
         />
       )}
+
+      {/* 关闭确认弹窗（替代原生confirm） */}
+      <ConfirmModal
+        isVisible={showCloseConfirm}
+        title="提示"
+        message="确定要关闭验证弹窗吗？关闭后需要重新提交注册信息。"
+        confirmText="确定"
+        cancelText="取消"
+        onConfirm={() => {
+          setShowCloseConfirm(false)
+          setShowVerificationModal(false)
+          setRegistrationData(null)
+          setVerificationError('')
+        }}
+        onCancel={() => setShowCloseConfirm(false)}
+      />
     </div>
   )
 }

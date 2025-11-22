@@ -1,7 +1,7 @@
 const request = require('supertest')
 const app = require('../../src/app')
 const bcrypt = require('bcryptjs')
-const dbService = require('../../src/services/dbService')
+const dbService = require('../../src/domain-providers/dbService')
 
 describe('Authentication Routes', () => {
   // 在所有测试前创建测试用户

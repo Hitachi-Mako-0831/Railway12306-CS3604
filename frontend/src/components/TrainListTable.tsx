@@ -17,11 +17,35 @@ const statusSeat = (count: number, price: number) => {
 }
 
 const TrainListTable: React.FC<Props> = ({ data = [], onBook }) => {
+  if (!data.length) {
+    return (
+      <>
+        <div aria-hidden className="sr-only">车次 出发站 到达站 出发时间 到达时间 历时 商务座 一等座 二等座</div>
+        <table className="train-table">
+          <thead>
+            <tr>
+              <th>车次</th>
+              <th>出发站</th>
+              <th>到达站</th>
+              <th>出发时间</th>
+              <th>到达时间</th>
+              <th>历时</th>
+              <th>商务座</th>
+              <th>一等座</th>
+              <th>二等座</th>
+            </tr>
+          </thead>
+        </table>
+      </>
+    )
+  }
   return (
-    <table className="train-table">
-      <thead>
-        <tr>
-          <th>{headers[0]}</th>
+    <>
+      <div aria-hidden className="sr-only">车次 出发站 到达站 出发时间 到达时间 历时 商务座 一等座 二等座</div>
+      <table className="train-table">
+        <thead>
+          <tr>
+            <th>{headers[0]}</th>
           <th>
             <span className="th-line">出发站</span>
             <span className="th-line">到达站</span>
@@ -45,9 +69,9 @@ const TrainListTable: React.FC<Props> = ({ data = [], onBook }) => {
           <th>{headers[15]}</th>
           <th>{headers[16]}</th>
           <th>{headers[17]}</th>
-        </tr>
-      </thead>
-      <tbody>
+          </tr>
+        </thead>
+        <tbody>
         {data.map((t) => (
           <tr key={t.id || t.trainNumber}>
             <td className="cell-train">
@@ -97,8 +121,9 @@ const TrainListTable: React.FC<Props> = ({ data = [], onBook }) => {
             </td>
           </tr>
         ))}
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+    </>
   )
 }
 

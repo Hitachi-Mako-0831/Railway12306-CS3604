@@ -1,6 +1,6 @@
-const authService = require('../../src/services/authService')
+const authService = require('../../src/domain-providers/authService')
 const bcrypt = require('bcryptjs')
-const dbService = require('../../src/services/dbService')
+const dbService = require('../../src/domain-providers/dbService')
 
 describe('AuthService', () => {
   // 在所有测试前创建测试用户

@@ -40,6 +40,7 @@ const SmsVerificationModal: React.FC<SmsVerificationModalProps> = ({
     }
     setIsLoading(true)
     setValidationError('')
+    console.log('Sending SMS for ID card last 4:', idCardLast4)
     if (!sessionId) {
       setCountdown(60)
       setIsLoading(false)

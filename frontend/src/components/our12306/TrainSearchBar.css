@@ -1,0 +1,12 @@
+.train-search-bar{width:100%}
+.search-bar-container{display:flex;align-items:center;gap:8px}
+.radio-option{display:inline-flex;align-items:center;gap:6px}
+.vertical-divider-blue{width:1px;height:28px;background:#3B99FC;margin:0 8px}
+.search-field-inline{display:flex;align-items:center;gap:6px}
+.search-field-label-inline{font-size:13px;color:#333}
+.swap-stations-btn{border:none;background:transparent;cursor:pointer}
+.swap-icon{width:20px;height:20px}
+.search-submit-btn{padding:6px 18px;background:#0080ff;color:#fff;border:none;border-radius:3px;cursor:pointer}
+.field-error{color:#d32f2f;font-size:12px}
+.search-error-message{color:#d32f2f;font-size:13px;margin-top:8px}
+.search-bar-container,.search-bar-container *{color:#000 !important}

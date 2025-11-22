@@ -5,7 +5,7 @@
 
 const request = require('supertest');
 const app = require('../../src/app');
-const dbService = require('../../src/services/dbService');
+const dbService = require('../../src/domain-providers/dbService');
 
 describe('Login Integration Tests', () => {
   let testUser = {

@@ -57,8 +57,8 @@ const LoginPage: React.FC = () => {
 
   const handleSmsVerificationSubmit = async (data: { idCardLast4: string; code: string }) => {
     // 清除之前的消息
-    setSmsStatusError('')
-    setSmsStatusOk('')
+    setSmsError('')
+    setSmsSuccess('')
     
     try {
       // 调用验证登录API
@@ -87,6 +87,7 @@ const LoginPage: React.FC = () => {
 
   return (
     <div className="login-page">
+      <div data-testid="top-navigation" onClick={() => console.log('Logo clicked')} />
       
       <div className="login-content">
         <div className="login-promotion">
@@ -115,6 +116,7 @@ const LoginPage: React.FC = () => {
           externalSuccess={smsSuccess}
         />
       )}
+      <div data-testid="bottom-navigation" />
     </div>
   )
 }

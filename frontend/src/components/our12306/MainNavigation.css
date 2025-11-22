@@ -1,0 +1,9 @@
+/* copied styles */
+.main-navigation{background:#3B99FC;border-bottom:1px solid #2a88eb;box-shadow:0 2px 5px rgba(0,0,0,.12);position:sticky;top:0;z-index:100}
+.nav-container{max-width:1400px;margin:0 auto;display:flex;align-items:stretch;height:45px;padding:0 40px}
+.nav-item{color:#fff;text-decoration:none;padding:0 24px;font-size:16px;transition:all .2s;position:relative;display:flex;align-items:center;justify-content:center;cursor:pointer;white-space:nowrap;flex:1;border-left:1px solid rgba(255,255,255,.1)}
+.nav-item:first-child{border-left:none}
+.nav-item:hover{background:rgba(255,255,255,.12)}
+.nav-item:active{background:rgba(255,255,255,.2)}
+.nav-item.active{background:#2676E3}
+.nav-arrow{margin-left:4px;font-size:10px;opacity:.8}

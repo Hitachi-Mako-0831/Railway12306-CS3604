@@ -1,0 +1,29 @@
+/* copied styles */
+.train-list-top-bar{width:100%;background-color:#ffffff;border-bottom:1px solid #e0e0e0;box-shadow:0 1px 3px rgba(0,0,0,0.05);position:relative;z-index:101}
+.train-list-top-container{max-width:1300px;margin:0 auto;padding:12px 40px;display:flex;align-items:center;justify-content:space-between}
+.train-list-logo-section{display:flex;align-items:center;gap:2px;cursor:pointer;flex-shrink:0;margin-right:20px}
+.train-list-logo-image{width:60px;height:60px;object-fit:contain}
+.train-list-logo-text{display:flex;flex-direction:column;gap:2px}
+.train-list-logo-chinese{font-size:22px;font-weight:bold;color:#333;letter-spacing:1.3px;line-height:1.2}
+.train-list-logo-english{font-size:15px;color:#999;letter-spacing:.1px;line-height:1.2}
+.train-list-search-box{flex:1;max-width:420px;display:flex;align-items:center;position:relative;margin:0 auto}
+.train-list-search-input{width:100%;height:36px;padding:0 50px 0 16px;border:1px solid #d0d0d0;border-radius:0;font-size:13px;color:#333;outline:none;transition:all .3s}
+.train-list-search-input::placeholder{color:#999;font-size:13px}
+.train-list-search-input:focus{border-color:#3B99FC;box-shadow:0 0 0 2px rgba(59,153,252,.1)}
+.train-list-search-button{position:absolute;right:0;top:0;width:42px;height:36px;background:#3B99FC;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s;border-radius:0}
+.train-list-search-button:hover{background:#4aa7fd}
+.train-list-search-button:active{background:#2a88eb}
+.search-icon{width:20px;height:20px;object-fit:contain}
+.train-list-top-links{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.train-list-top-link{color:#3B99FC;text-decoration:none;font-size:14px;transition:color .3s;white-space:nowrap;padding:0 10px;position:relative}
+.train-list-top-link::after{content:"";position:absolute;right:-5px;top:50%;transform:translateY(-50%);width:1px;height:12px;background-color:#3B99FC}
+.train-list-top-link:last-of-type::after{display:block}
+.train-list-top-link:hover{color:#2a88eb;text-decoration:underline}
+.train-list-welcome-text{font-size:14px;color:#666;margin-left:8px;margin-right:0}
+.train-list-username{font-size:14px;color:#ff6600;font-weight:500;margin:0 4px 0 0}
+.train-list-divider{font-size:14px;color:#333;margin:0 4px}
+.train-list-logout-button{background:none;border:none;color:#3B99FC;text-decoration:none;font-size:14px;cursor:pointer;padding:0;transition:all .2s;white-space:nowrap}
+.train-list-logout-button:hover{color:#2a88eb;text-decoration:underline}
+.train-list-logout-button:active{color:#1976d2}
+.train-list-auth-link{color:#2196f3;text-decoration:none;font-size:14px;cursor:pointer;padding:0 4px;transition:all .2s;white-space:nowrap}
+.train-list-auth-link:hover{color:#1976d2;text-decoration:underline}

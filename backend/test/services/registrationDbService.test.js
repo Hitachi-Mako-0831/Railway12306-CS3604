@@ -6,8 +6,8 @@
  * 测试目标：验证注册相关的数据库操作功能
  */
 
-const registrationDbService = require('../../src/services/registrationDbService');
-const dbService = require('../../src/services/dbService');
+const registrationDbService = require('../../src/domain-providers/registrationDbService');
+const dbService = require('../../src/domain-providers/dbService');
 
 describe('Registration Database Service Tests', () => {
   beforeEach(async () => {
