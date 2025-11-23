@@ -3,7 +3,7 @@ import { Suspense, lazy } from 'react'
 const LoginPage = lazy(() => import('./pages/LoginPage'))
 const RegisterPage = lazy(() => import('./pages/RegisterPage'))
 const HomePage = lazy(() => import('./pages/HomePage'))
-const TrainListPage = lazy(() => import('./pages/TrainListPage'))
+const TrainsPage = lazy(() => import('./pages/TrainsPage'))
 const OrderPage = lazy(() => import('./pages/OrderPage'))
 const OrderHistoryPage = lazy(() => import('./pages/OrderHistoryPage'))
 import TopNavigation from './components/TopNavigation'
@@ -25,7 +25,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/" element={<HomePage />} />
-        <Route path="/trains" element={<TrainListPage />} />
+        <Route path="/trains" element={<TrainsPage />} />
         <Route path="/orders" element={<OrderPage />} />
         <Route path="/orders/history" element={<OrderHistoryPage />} />
         <Route path="/passengers" element={<PassengersPage />} />

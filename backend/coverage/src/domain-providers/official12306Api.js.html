@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40.35% </span>
+                <span class="strong">14.03% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>23/57</span>
+                <span class='fraction'>8/57</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">32.75% </span>
+                <span class="strong">17.24% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>19/58</span>
+                <span class='fraction'>10/58</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">42.85% </span>
+                <span class="strong">14.28% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/7</span>
+                <span class='fraction'>1/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">14.28% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>21/42</span>
+                <span class='fraction'>6/42</span>
             </div>
         
             
@@ -164,21 +164,14 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -186,6 +179,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -213,12 +213,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -249,16 +249,16 @@ const CONFIG = {
 &nbsp;
 let tokenCache = { accessToken: null, expiresAt: 0 }
 &nbsp;
-async function getAccessToken() {
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (CONFIG.useMock) <span class="cstat-no" title="statement not covered" >return 'mock-token'</span>
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!axios) <span class="cstat-no" title="statement not covered" >throw new Error('axios not available')</span>
-  const now = Date.now()
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (tokenCache.accessToken &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >tokenCache.expiresAt - 60000 &gt; now)</span> <span class="cstat-no" title="statement not covered" >return tokenCache.accessToken</span>
-  const params = new URLSearchParams()
-  params.set('grant_type', 'client_credentials')
-  params.set('client_id', CONFIG.clientId)
-  params.set('client_secret', CONFIG.clientSecret)
-  const res = await axios.post(CONFIG.tokenURL, params, { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } })
+async function <span class="fstat-no" title="function not covered" >getAccessToken(</span>) {
+<span class="cstat-no" title="statement not covered" >  if (CONFIG.useMock) <span class="cstat-no" title="statement not covered" >return 'mock-token'</span></span>
+<span class="cstat-no" title="statement not covered" >  if (!axios) <span class="cstat-no" title="statement not covered" >throw new Error('axios not available')</span></span>
+  const now = <span class="cstat-no" title="statement not covered" >Date.now()</span>
+<span class="cstat-no" title="statement not covered" >  if (tokenCache.accessToken &amp;&amp; tokenCache.expiresAt - 60000 &gt; now) <span class="cstat-no" title="statement not covered" >return tokenCache.accessToken</span></span>
+  const params = <span class="cstat-no" title="statement not covered" >new URLSearchParams()</span>
+<span class="cstat-no" title="statement not covered" >  params.set('grant_type', 'client_credentials')</span>
+<span class="cstat-no" title="statement not covered" >  params.set('client_id', CONFIG.clientId)</span>
+<span class="cstat-no" title="statement not covered" >  params.set('client_secret', CONFIG.clientSecret)</span>
+  const res = <span class="cstat-no" title="statement not covered" >await axios.post(CONFIG.tokenURL, params, { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } })</span>
   const { access_token, expires_in } = <span class="cstat-no" title="statement not covered" >res.data</span>
 <span class="cstat-no" title="statement not covered" >  tokenCache = { accessToken: access_token, expiresAt: now + (expires_in * 1000) }</span>
 <span class="cstat-no" title="statement not covered" >  return tokenCache.accessToken</span>
@@ -298,13 +298,13 @@ async function <span class="fstat-no" title="function not covered" >mockSearch(<
 <span class="cstat-no" title="statement not covered" >  return list.map(normalize)</span>
 }
 &nbsp;
-async function searchTrains({ from, to, date, highspeed }) {
-  const cacheKey = `official:search:${from}:${to}:${date}:${highspeed || '-'}`
-  const cached = await cache.get(cacheKey)
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (cached) <span class="cstat-no" title="statement not covered" >return cached</span>
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (CONFIG.useMock) { const out = <span class="cstat-no" title="statement not covered" >await mockSearch({ from, to, date, highspeed });</span> <span class="cstat-no" title="statement not covered" >await cache.set(cacheKey, out); <span class="cstat-no" title="statement not covered" ></span>return out </span>}
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!axios) <span class="cstat-no" title="statement not covered" >throw new Error('axios not available')</span>
-  const token = await getAccessToken()
+async function <span class="fstat-no" title="function not covered" >searchTrains(</span>{ from, to, date, highspeed }) {
+  const cacheKey = <span class="cstat-no" title="statement not covered" >`official:search:${from}:${to}:${date}:${highspeed || '-'}`</span>
+  const cached = <span class="cstat-no" title="statement not covered" >await cache.get(cacheKey)</span>
+<span class="cstat-no" title="statement not covered" >  if (cached) <span class="cstat-no" title="statement not covered" >return cached</span></span>
+<span class="cstat-no" title="statement not covered" >  if (CONFIG.useMock) { const out = <span class="cstat-no" title="statement not covered" >await mockSearch({ from, to, date, highspeed });</span> <span class="cstat-no" title="statement not covered" >await cache.set(cacheKey, out); <span class="cstat-no" title="statement not covered" ></span>return out </span>}</span>
+<span class="cstat-no" title="statement not covered" >  if (!axios) <span class="cstat-no" title="statement not covered" >throw new Error('axios not available')</span></span>
+  const token = <span class="cstat-no" title="statement not covered" >await getAccessToken()</span>
   const url = <span class="cstat-no" title="statement not covered" >`${CONFIG.baseURL}/trains/search`</span>
 <span class="cstat-no" title="statement not covered" >  tryConsume()</span>
   const res = <span class="cstat-no" title="statement not covered" >await axios.get(url, { params: { from, to, date, highspeed }, headers: { Authorization: `Bearer ${token}` } })</span>
@@ -328,7 +328,7 @@ function <span class="fstat-no" title="function not covered" >tryConsume(</span>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-11-23T05:14:11.450Z
+                at 2025-11-23T06:40:51.776Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
