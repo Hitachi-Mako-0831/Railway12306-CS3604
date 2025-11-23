@@ -2,6 +2,9 @@ const path = require('path');
 const fs = require('fs');
 const dataset = require('../domain-providers/trainDatasetService');
 const db = require('../domain-providers/dbService');
+const official = require('../domain-providers/official12306Api');
+const cache = require('../domain-providers/cacheService');
+const diff = require('../domain-providers/dataDiffService');
 
 function loadTraeFallback() {
   const dataPath = path.resolve(process.cwd(), '.trae', 'documents', '2-车票查询与筛选', '车次信息.json');
@@ -71,7 +74,8 @@ async function fetchDbTrains({ from, to, highspeed }) {
     const arrTimeCol = ['arrival_time','arrivaltime'].find((k) => chosen.cs.includes(k)) || 'arrival_time';
     const durMinCol = ['planned_duration_min','duration_min','durationmin'].find((k) => chosen.cs.includes(k)) || null;
     const typeCol = ['train_type','type'].find((k) => chosen.cs.includes(k)) || null;
-    const rows = await db.all(`SELECT * FROM ${chosen.name} WHERE ${originCol} = ? AND ${destCol} = ? LIMIT 500`, [from, to]);
+    const rows = await db.all(`SELECT * FROM ${chosen.name} WHERE ${originCol} = ? COLLATE NOCASE AND ${destCol} = ? COLLATE NOCASE LIMIT 500`, [String(from || '').trim(), String(to || '').trim()]);
+    console.log('db-fetch-trains', { table: chosen.name, originCol, destCol, count: Array.isArray(rows) ? rows.length : 0 })
     const okRows = rows.filter((r) => {
       if (highspeed === '1') {
         const type = typeCol ? lower(r[typeCol]) : '';
@@ -103,7 +107,8 @@ async function fetchDbTrains({ from, to, highspeed }) {
         fares,
       };
     });
-  } catch (_) {
+  } catch (e) {
+    console.error('db-fetch-trains-error', { error: String(e && e.message || e), params: { from, to, highspeed } })
     return [];
   }
 }
@@ -111,11 +116,19 @@ async function fetchDbTrains({ from, to, highspeed }) {
 class TrainController {
   async searchTrains(req, res) {
     try {
+      const t0 = Date.now()
       const { from, to, date, highspeed } = req.query;
       if (!from || !to || !date) {
         return res.status(400).json({ success: false, message: '缺少必要参数：from、to、date' });
       }
       let list = [];
+      const useOfficial = false
+      const cacheKey = `api:search:${from}:${to}:${date}:${highspeed || '-'}`
+      const cached = await cache.get(cacheKey)
+      if (cached) {
+        return res.status(200).json({ success: true, trains: cached })
+      }
+      // Official API disabled: always use local database and dataset fallback
       try {
         const dbRows = await fetchDbTrains({ from, to, highspeed });
         if (Array.isArray(dbRows) && dbRows.length) {
@@ -141,8 +154,22 @@ class TrainController {
           return true;
         }).map(toResultItem);
       }
+      await cache.set(cacheKey, list)
+      const metrics = require('../monitoring/metrics')
+      metrics.observe(Date.now() - t0, true)
+      try {
+        // compare with fallback dataset regularly for consistency auditing
+        const ds = await dataset.search({ from, to, highspeed })
+        const dsNorm = Array.isArray(ds) ? ds.map(toResultItem) : []
+        const report = diff.diffLists(list, dsNorm)
+        if (report.onlyOfficial.length || report.onlyBackup.length) {
+          console.log('data-diff', { onlyOfficial: report.onlyOfficial.slice(0,5), onlyBackup: report.onlyBackup.slice(0,5) })
+        }
+      } catch (_) {}
       return res.status(200).json({ success: true, trains: list });
     } catch (error) {
+      const metrics = require('../monitoring/metrics')
+      metrics.observe(0, false)
       return res.status(500).json({ success: false, message: '查询失败' });
     }
   }

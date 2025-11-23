@@ -1,3 +1,5 @@
+const API_BASE = (import.meta as any)?.env?.VITE_API_BASE || 'http://localhost:8080'
+
 export async function searchTrains(departureStation: string, arrivalStation: string, departureDate: string, trainTypes?: string[]) {
   try {
     const highspeed = trainTypes && trainTypes.length ? '1' : undefined
@@ -6,7 +8,7 @@ export async function searchTrains(departureStation: string, arrivalStation: str
     params.set('to', arrivalStation)
     params.set('date', departureDate)
     if (highspeed === '1') params.set('highspeed', '1')
-    const res = await fetch(`/api/trains/search?${params.toString()}`)
+    const res = await fetch(`${API_BASE}/api/trains/search?${params.toString()}`, { headers: { Accept: 'application/json' } })
     if (!res.ok) { const err = await res.json().catch(() => ({})); throw new Error(err.message || '查询失败') }
     const data = await res.json()
     const trains = (data.trains || []).map((t: any) => {
@@ -38,7 +40,7 @@ export async function searchTrains(departureStation: string, arrivalStation: str
 
 export async function getAvailableDates() {
   try {
-    const res = await fetch('/api/trains/available-dates')
+    const res = await fetch(`${API_BASE}/api/trains/available-dates`, { headers: { Accept: 'application/json' } })
     const data = await res.json()
     return { success: true, availableDates: data.dates || [], currentDate: new Date().toISOString().split('T')[0] }
   } catch (e: any) {

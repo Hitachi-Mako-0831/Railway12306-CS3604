@@ -10,6 +10,7 @@ const orderRoutes = require('./route-manifests/orders');
 const passengerRoutes = require('./route-manifests/passengers');
 const stationRoutes = require('./route-manifests/stations');
 const ticketRoutes = require('./route-manifests/tickets');
+const metricsRoutes = require('./route-manifests/metrics');
 const errorHandler = require('./request-interceptors/errorHandler');
 
 const app = express();
@@ -30,6 +31,7 @@ app.use('/api/orders', orderRoutes);
 app.use('/api/passengers', passengerRoutes);
 app.use('/api/stations', stationRoutes);
 app.use('/api/tickets', ticketRoutes);
+app.use('/api/metrics', metricsRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
